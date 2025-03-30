@@ -1,0 +1,99 @@
+/* Define custom base colors for the theme */
+
+/* Base colors for light and dark modes */
+* { 
+-fx-base-light: #F7EBEC;
+-fx-base-dark: #242423;
+
+-fx-secondary-light: #F6F6F6;
+-fx-secondary-dark: #333333;
+
+-fx-primary-color: #6C63FF;
+-fx-hover-color: #5A54D9;
+
+-fx-text-light: #242423;
+-fx-text-dark: #FFFFFF;
+}
+
+/* Root background color */
+.root {
+    -fx-background-color: -fx-base-light;
+}
+
+/* Card styles */
+.card {
+    -fx-background-color: -fx-secondary-light;
+    -fx-padding: 20px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+
+.button {
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: -fx-text-light;
+    -fx-min-width: 200px;
+    -fx-min-height: 50px;
+    -fx-font-size: 16px;
+}
+
+.dark-mode .button {
+    -fx-text-fill: -fx-text-dark;
+}
+
+.button:hover {
+    -fx-background-color: -fx-hover-color;
+}
+
+
+
+/* Dark mode specific styles */
+.dark-mode {
+    -fx-background-color: -fx-base-dark;
+}
+
+.dark-mode .card {
+    -fx-background-color: -fx-secondary-dark;
+}
+
+.title {
+    -fx-font-size: 24px;
+    -fx-text-fill: -fx-text-light;
+}
+
+.dark-mode .title {
+    -fx-text-fill: -fx-text-dark;
+}
+
+.text {
+    -fx-text-fill: -fx-text-light;
+}
+
+.dark-mode .text {
+    -fx-text-fill: -fx-text-dark;
+}
+
+.combo-box {
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: -fx-text-light;
+}
+
+.combo-box:hover {
+    -fx-background-color: -fx-hover-color;
+}
+
+.dark-mode .combo-box {
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: -fx-text-dark;
+}
+
+/* Text field styles */
+.text-field {
+    -fx-background-color: -fx-base-light;
+    -fx-text-fill: -fx-text-light;
+}
+
+.dark-mode .text-field {
+    -fx-background-color: -fx-base-dark;
+    -fx-text-fill: -fx-text-dark;
+}
